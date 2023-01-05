@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.App {
+  text-align: center;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  height: 100vh;
+  padding: 5vh 0vh;
+}
+
+.content {
+  background-color: rgba(148, 104, 127, 0.37);
+  border-radius: 20px;
+  position: relative;
+  height: 80%;
+}
+
+.play {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: normal;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.buttons {
+  display: block;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.score {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  font-size: 70px;
+  font-weight: bold;
+  color: aliceblue;
+  text-shadow: 0px 0px 6px;
+}
+
+.currScorehold {
+  background-color: #c7365f;
+  margin: 50px 80px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.curName {
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.curScore {
+  font-size: 40px;
+}
+
+button {
+  text-decoration: none;
+  background: none;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+
+  background-color: whitesmoke;
+  backdrop-filter: blur(2px);
+}
+
+img {
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.newgame {
+  top: 3%;
+  display: flex;
+}
+
+.rollDice {
+  bottom: 25%;
+  display: flex;
+}
+
+.hold {
+  bottom: 10%;
+  display: flex;
+}
+
+span {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+button p {
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: rgba(243, 222, 233, 0.582);
+}
+
+@media only screen and (min-width:900px) {
+  .App {
+    padding: 5vh 10vh;
+  }
+
+
+}
+
+@media(min-width:1000px) {
+  .App {
+    padding: 5vh 23vh
+  }
+}
